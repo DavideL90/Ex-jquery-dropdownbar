@@ -5,10 +5,65 @@
 }
 body{
   background-image: url('http://www.supercleanersinc.com/wp/wp-content/uploads/2014/07/1920x1080-environment-1.jpg');
+  font-family: Helvetica;
+}
+.backgr-color{
+  background: linear-gradient(#adfdca, #318951);
+
 }
 #bar{
   height: 100vh;
   width: 250px;
   margin-left: 5%;
-  background-color: black;
+}
+#bar #logo-cnt{
+  width: 100%;
+  padding: 20px 50px;
+}
+#bar #logo-cnt img{
+  width: 100%;
+}
+#bar #bar-menu{
+  margin-top: 150px;
+}
+#bar-menu .bar-items{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 30px;
+  cursor: pointer;
+}
+.bar-items .dropdown-menu{
+  display: none;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 270px;
+  border-radius: 10px;
+  font-size: 25px;
+  z-index: 5000;
+}
+.dropdown-menu .empty-cnt, .second-dropdown .empty-cnt{
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  left: -20px;
+}
+.dropdown-menu .square, .second-dropdown .square{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+.dropdown-menu .drop-items, .second-dropdown .drop-items{
+  margin: 30px 50px;
+}
+.dropdown-menu .second-dropdown{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 220px;
 }
