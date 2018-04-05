@@ -42,32 +42,31 @@ body{
   border-radius: 10px;
   font-size: 25px;
 }
-.dropdown-cnt .dropdown-menu{
+.dropdown-cnt .dropdown-menu, .second-dropdown-cnt .second-dropdown{
   border-radius: 10px;
-  z-index: 1000;
 }
-.dropdown-cnt .empty-cnt, .second-dropdown .empty-cnt{
+.dropdown-cnt .empty-cnt, .second-dropdown-cnt .empty-cnt{
   position: absolute;
   height: 100%;
   width: 20px;
   left: -20px;
 }
-.dropdown-cnt .square, .second-dropdown .square{
+.dropdown-cnt .square, .second-dropdown-cnt .square{
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: -15px;
   transform: rotate(45deg);
-  z-index: 1;
+  z-index: -1;
 }
 
-.dropdown-menu .drop-items, .second-dropdown .drop-items{
+.dropdown-menu .drop-items, .second-dropdown-cnt .drop-items{
   padding: 30px 50px;
 }
-.dropdown-cnt .second-dropdown{
+.drop-items .second-dropdown-cnt{
   display: none;
   position: absolute;
   top: 0;
-  left: 220px;
+  left: 270px;
 }
