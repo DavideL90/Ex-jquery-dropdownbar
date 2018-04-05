@@ -62,6 +62,7 @@ body{
 }
 
 .dropdown-menu .drop-items, .second-dropdown-cnt .drop-items{
+  position: relative;
   padding: 30px 50px;
 }
 .drop-items .second-dropdown-cnt{
