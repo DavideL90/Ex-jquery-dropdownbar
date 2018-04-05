@@ -33,7 +33,7 @@ body{
   padding: 30px 30px;
   cursor: pointer;
 }
-.bar-items .dropdown-menu{
+.bar-items .dropdown-cnt{
   display: none;
   width: 250px;
   position: absolute;
@@ -41,15 +41,18 @@ body{
   left: 270px;
   border-radius: 10px;
   font-size: 25px;
-  z-index: 5000;
 }
-.dropdown-menu .empty-cnt, .second-dropdown .empty-cnt{
+.dropdown-cnt .dropdown-menu{
+  border-radius: 10px;
+  z-index: 1000;
+}
+.dropdown-cnt .empty-cnt, .second-dropdown .empty-cnt{
   position: absolute;
   height: 100%;
   width: 20px;
   left: -20px;
 }
-.dropdown-menu .square, .second-dropdown .square{
+.dropdown-cnt .square, .second-dropdown .square{
   width: 30px;
   height: 30px;
   position: absolute;
@@ -58,10 +61,11 @@ body{
   transform: rotate(45deg);
   z-index: 1;
 }
+
 .dropdown-menu .drop-items, .second-dropdown .drop-items{
-  margin: 30px 50px;
+  padding: 30px 50px;
 }
-.dropdown-menu .second-dropdown{
+.dropdown-cnt .second-dropdown{
   display: none;
   position: absolute;
   top: 0;
